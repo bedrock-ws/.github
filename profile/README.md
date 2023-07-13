@@ -31,7 +31,7 @@ After you have started a server you can connect to it via the `/wsserver` (or it
 ## Other things we do
 
 Because websockets in Minecraft are not maintained anymore and have never been officially
-documented we will provide a (digital) book going in-depth how wensockets in Minecraft
+documented we will provide a (digital) book going in-depth how websockets in Minecraft
 work so the implementation in other programming languages can be done more easily.
 
 Some applications that work with websockets are published here as well.
