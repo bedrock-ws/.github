@@ -1,8 +1,35 @@
 # Bedrock Websockets
 
 Websockets are a natively supported way for a server communicating with a player in
-Minecraft.
+Minecraft. The official Script API of Minecraft however is generally preferred over
+using a websocket connection. Here are some major reasons why you would use websockets
+instead of a Script API:
 
+- programmatically modify/manage a Minecraft world hosted on a console[^1]
+- use another language than JavaScript (or one that transpiles to JavaScript)[^2]
+
+[^1]: Console players (Playstation/XBox/Switch/...) cannot download behaviour
+      packs from sources other than the Marketplace Store. Because connecting
+      to a websocket server is also not possible, it is required to join that
+      world on a mobile or desktop device.
+
+[^2]: Keep in mind that the functionality is very limited with websockets compared
+      to the Script API. If your project relies on something that cannot be done
+      with JavaScript for example using some library that is only present in a
+      different language. Note that it is possible to do
+      [HTTP requests](https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server-net/httpclient)
+      so you can still connect to a server that may use another programming language
+      or interacts with the internet or the "real world" such as smart home devices.
+
+      JavaScript is not that hard and it can be fun and useful to learn an entire new
+      programming language. You may as well take a look at [TypeScript](https://www.typescriptlang.org).
+
+> **Warning**
+>
+> Websockets are not natively supported on every device that runs Minecraft. Establishing
+> a connection to a websocket server is only possible on mobile and desktop devices and
+> not consoles. However another player is able to be connected to the server which then
+> is capable of running commands in that world.
 
 ## How does it work?
 
