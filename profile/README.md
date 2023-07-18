@@ -41,6 +41,15 @@ sequenceDiagram
         Client-)Server: "Alice" sent "Hello World"
 ```
 
+> **Note**
+>
+> The server can only listen to events that the client triggers. For example if another
+> player sends a message in the chat, the event `PlayerMessage` is not triggered. The
+> server also runs commands *as* the client which means that `@s` refers to the player
+> connected to the server and relative coordinates are relative to that player. More
+> players may connect to the same server but this has not been tried out yet so feel
+> free to let us know if it works.
+
 Implementing servers that handle events takes a long time and is very inconvenient so
 we try to implement wrappers around it in different programming languages. At the moment
 only Python is supported.
