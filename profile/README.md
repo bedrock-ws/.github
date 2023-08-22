@@ -16,10 +16,7 @@ instead of a Script API:
 [^2]: Keep in mind that the functionality is very limited with websockets compared
       to the Script API. If your project relies on something that cannot be done
       with JavaScript for example using some library that is only present in a
-      different language. Note that it is possible to do
-      [HTTP requests](https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server-net/httpclient)
-      so you can still connect to a server that may use another programming language
-      or interacts with the internet or the "real world" such as smart home devices.
+      different language.
 
       JavaScript is not that hard and it can be fun and useful to learn an entire new
       programming language. You may as well take a look at [TypeScript](https://www.typescriptlang.org).
