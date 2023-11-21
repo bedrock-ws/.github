@@ -21,7 +21,7 @@ instead of a Script API:
       JavaScript is not that hard and it can be fun and useful to learn an entire new
       programming language. You may as well take a look at [TypeScript](https://www.typescriptlang.org).
 
-> **Warning**
+> [!WARNING]
 >
 > Websockets are not natively supported on every device that runs Minecraft. Establishing
 > a connection to a websocket server is only possible on mobile and desktop devices and
@@ -38,7 +38,7 @@ sequenceDiagram
         Client-)Server: "Alice" sent "Hello World"
 ```
 
-> **Note**
+> [!NOTE]
 >
 > The server can only listen to events that the client triggers. For example if another
 > player sends a message in the chat, the event `PlayerMessage` is not triggered. The
