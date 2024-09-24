@@ -49,9 +49,10 @@ sequenceDiagram
 
 Implementing servers that handle events takes a long time and is very inconvenient so
 we try to implement wrappers around it in different programming languages. At the moment
-only Python is supported.
+only Python and Dart are supported.
 
 - [🐍 Python](https://github.com/bedrock-ws/bedrockpy)
+- [🎯 Dart](https://github.com/bedrock-ws/bedrockws-dart)
 
 After you have started a server you can connect to it via the `/wsserver` (or its alias
 `/connect`) command by typing it in the Minecraft chat.
