@@ -1,4 +1,4 @@
-# Bedrock Websockets
+# Minecraft: Bedrock Edition WebSockets
 
 Websockets are a natively supported way for a server communicating with a player in
 Minecraft. The official Script API of Minecraft however is generally preferred over
